@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  /* Colors */
+  --bgBody: #e4e2e2;
+  --bgNavBar: #060644;
+  --naranjaSena: #fd671a;
+
+  /* Funtes tipograficas */
+  --fontTitle:  'Poppins', sans-serif;
+  --fontText: 'Montserrat', sans-serif;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bgBody);
+  font-family: var(--fontText);
+}
+
+.cont-main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cont-navBar{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--bgNavBar);
+  padding: 0.5rem 0;
+}
+
+.cont-navBar .col1{
+  display: flex;
+  justify-content: center;
+  width: 35%;
+}
+
+.cont-navBar .col1 img{
+  width: 90px;
+}
+
+.cont-navBar .col2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.cont-navBar .col2 ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+.cont-navBar .col2 li{
+  width: 33%;
+}
+
+.cont-navBar .col2 a{
+  width: 100%;
+  background-color: var(--naranjaSena);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--fontTitle);
+}
+
+.sectionHero{
+  max-height: 500px;
+}
+
+.sectionHero img {
+  width: 100%;
+  max-height: 500px;
+}
+
+.sectionNosotros{
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.sectionNosotros h2{
+  text-align: center;
+  font-size: 35px;
+  font-family: var(--fontTitle);
+}
+
+.cont-imgAndTextNosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.cont-imgAndTextNosotros img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.cont-imgAndTextNosotros p{
+  padding: 0 2rem;
+}
+
+.sectionContacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.sectionContacto h2 { 
+  text-align: center;
+  font-size: 35px;
+  font-family: var(--fontTitle);
+}
+
+.sectionContacto form{
+  background-color: var(--bgNavBar);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.cont-colsFoms{
+  display: flex;
+}
+
+.sectionContacto form .formCol1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.sectionContacto form label{
+  text-align: left;
+  width: 90%;
+  margin: 0.5rem 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.sectionContacto form input, textarea{
+  text-align: left;
+  width: 90%;
+  border-style: none;
+  padding: 0.5rem 1rem;
+  outline-style: none;
+  border-radius: 1rem;
+  background-color: #e4e2e2;
+  resize: none;
+}
+
+.sectionContacto form .formCol2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.sectionContacto form .btnEnviar{
+  width: 250px;
+  background-color: #fd671a;
+  padding: 0.5rem 1rem;
+  border-style: none;
+  outline-style: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-family: var(--fontTitle);
+}
+
+.cont-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--naranjaSena);
+  color: #fafafa;
+  text-align: center;
+}
+
+.cont-footer img{
+  width: 120px;
+  padding: 0 1rem;
+}
